@@ -10,9 +10,7 @@ public class RecImplementation implements Recommender{
     @Override
     public ArrayList<String> getItemsToRate (){
         ThirdRatings sr = new ThirdRatings("data/ratings_short.csv");
-        //System.out.println("read data for " + sr.getRaterSize() + " raters");
         MovieDatabase.initialize("ratedmovies_short.csv");
-        //System.out.println("read data for " + MovieDatabase.size() + " movies");
         Filter filter = new YearAfterFilter(2000);
         ArrayList<Rating> ratings = sr.getAverageRatingsByFilter(1,filter); 
         ArrayList<String> movies = new ArrayList<String>();
