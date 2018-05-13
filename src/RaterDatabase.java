@@ -14,7 +14,6 @@ public class RaterDatabase {
     private static HashMap<String,Rater> ourRaters; //maps Rater ID to Rater Object
      
 	private static void initialize() {
-	    // this method is only called from addRatings 
 		if (ourRaters == null) {
 			ourRaters = new HashMap<String,Rater>();
 		}
