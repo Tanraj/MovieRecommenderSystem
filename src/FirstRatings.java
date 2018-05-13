@@ -41,59 +41,17 @@ public class FirstRatings {
         int numComedies = 0;
         for(Movie movie : local){
             String genre = movie.getGenres();
-            //
+            
         }
         //how many movies are greater than 150 minutes in length
-        //in ratedmovies_short.csv there are 2 
         int exceedMinutes = 0;
         for(Movie movie : local){
              if(movie.getMinutes() > 150){
                  exceedMinutes += 1;
              }
         }
-        System.out.println("Number of movies greater than 150 minutes: " + exceedMinutes);    
+        System.out.println("Number of movies greater than 150 minutes: " + exceedMinutes);            
         
-        //maximum number of movies by any director, and who the directors are
-        //in ratedmovies_short.csv the maximum number of movies by any director 
-        //is one, and there are five directors that directed one such movie.
-        // ArrayList<String> directors;
-        // HashMap<String, ArrayList<String>> map = new HashMap<String, ArrayList<String>>();
-        // for(Movie movie : local){
-            // String director = movie.getDirector();
-            // int start = 0;
-            // int i = director.indexOf(",");
-            // while(i != -1){
-                // if(!map.containsKey(director.substring(0,indexOf(",") +1).trim())){
-                    // ArrayList<String> a = new ArrayList<String>();
-                    // a.add(movie);
-                    // map.put(director.substring(0,indexOf(",") +1).trim(),a);
-                // }else{
-                    // ArrayList<String> old = map.get(director.substring(0,indexOf(",") +1).trim());
-                    // old.put(movie);
-                    // map.remove(director.substring(0,indexOf(",") +1).trim());
-                    // map.put(director.substring(0,indexOf(",") +1).trim(), old);
-                // }
-                
-                // start = i;
-        // }
-    // }
-    // int maxSize = -1;
-    // for(String s : map.values()){
-        // if(s.size() > maxSize){
-        // maxSize = s.size();
-    // }
-    // }
-    
-    // ArrayList<String> directors = new ArrayList<String>();
-    // for(String s : map.keySet()){
-        // if(map.get(s).size().equals(maxSize)){
-            // directors.add(s);
-        // }      
-    // }
-   
-    // for(String s : directors){
-    // System.out.println("Director : " + s + " has" + maxNo +  " ratings");
-    // }
 }
     
     
@@ -117,9 +75,7 @@ public class FirstRatings {
         }
         }
         
-               // System.out.println("RETVAL SIZE BEFORE LOOP " + retVal.size());
         for(String ID : map.keySet()){
-           // System.out.println("Rater's ID: " + ID);
                             Rater rater = new EfficientRater(ID);
             for(Rating rating: map.get(ID)){
             rater.addRating(rating.getItem(), rating.getValue());
@@ -127,7 +83,6 @@ public class FirstRatings {
         }
         retVal.add(rater);
         }
-        //System.out.println("RETVAL SIZE " + retVal.size());
         return retVal;
    
     }
