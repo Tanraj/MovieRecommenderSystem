@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="StepOneStarterProgram 2 copy">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/courserajava.jar!/" />
+      <root url="jar://$PROJECT_DIR$/apache-csv.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
