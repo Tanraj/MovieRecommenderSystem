@@ -9,5 +9,7 @@ The "src" folder has the java implementation of the project.
 
 ![alt text](Recommendations.png "Screenshot")
 
+(A screenshot of what the outputted HTML table of recommendations looks like)
+
 Citation:<br />
 “Java Programming and Software Engineering Fundamentals.” Coursera, Michigan State University, www.coursera.org/specializations/java-programming#about.
