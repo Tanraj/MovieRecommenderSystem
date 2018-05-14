@@ -7,5 +7,5 @@ The first movie in the list is the one with the highest recommendation for the u
 
 The "src" folder has the java implementation of the project.
 
-Citation:
+Citation:<br />
 “Java Programming and Software Engineering Fundamentals.” Coursera, Michigan State University, www.coursera.org/specializations/java-programming#about.
