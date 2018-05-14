@@ -7,5 +7,7 @@ The first movie in the list is the one with the highest recommendation for the u
 
 The "src" folder has the java implementation of the project.
 
+![alt text](screenshots/Recommendations.png "Screenshot of outputted HTML table of recommendations for 'User 65' (I slightly shrunk the table from its original size so it could fit better in the screenshot)")
+
 Citation:<br />
 “Java Programming and Software Engineering Fundamentals.” Coursera, Michigan State University, www.coursera.org/specializations/java-programming#about.
