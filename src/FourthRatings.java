@@ -102,7 +102,6 @@ public class FourthRatings {
                 double rating = rater.getRating(s);
                 if(rating > 0.0){
                 double weightedAvg = similarRaters.get(i).getValue() * rating;
-                int num = rater.numRatings();
                 sum+=weightedAvg;
                 actualSimilarRaters += 1.0;
             }
@@ -132,7 +131,6 @@ public class FourthRatings {
                 double rating = rater.getRating(s);
                 if(rating > 0.0){
                 double weightedAvg = similarRaters.get(i).getValue() * rating;
-                int num = rater.numRatings();
                 sum+=weightedAvg;
                 actualSimilarRaters += 1.0;
             }
