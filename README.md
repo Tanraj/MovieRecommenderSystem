@@ -9,7 +9,7 @@ The [src folder](src) has the java implementation of the project. (I have groupe
 
 ![alt text](Recommendations.png "Screenshot")
 
-(A screenshot of what the outputted HTML table of recommendations looks like. In BlueJ, right-click on the "RecImplementation" class and then on "new RecImplementation()." Then right-click on the red box that appears and on "void printRecommendationsFor(String webRaterID)" and in the popup type the String "65".)
+(A screenshot of what the outputted HTML table of recommendations looks like. In BlueJ, right-click on the "RecImplementation" class and then on "new RecImplementation()." Then right-click on the red box that appears and on "void printRecommendationsFor(String webRaterID)" and in the popup type the String "65". This will output the HTML for this table. The picture above is how the table looks styled with CSS which I have done on my website that I am currently working on.)
 
 Citation:<br />
 “Java Programming and Software Engineering Fundamentals.” Coursera, Michigan State University, www.coursera.org/specializations/java-programming#about.
