@@ -5,7 +5,7 @@ Given a user for whom recommendations are to be created, adds dot-products betwe
 Multiplies the dot-product with the each reviewer's movie-review to create a weighted-rating and for a particular movie, takes the average weighted ratings for a set amount of reviewers. Sorting these movies in descending order of weighted average results in the list of movie recommendations for the user.
 The first movie in the list is the one with the highest recommendation for the user.
 
-The "src" folder has the java implementation of the project.
+The ["src" folder](src) has the java implementation of the project.
 
 ![alt text](Recommendations.png "Screenshot")
 
