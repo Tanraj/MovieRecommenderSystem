@@ -1,8 +1,8 @@
 
 /**
  * Write a description of TrueFilter here.
- * 
- * @author (your name) 
+ *
+ * @author (your name)
  * @version (a version number or a date)
  */
 public class TrueFilter implements Filter {
@@ -10,5 +10,4 @@ public class TrueFilter implements Filter {
 	public boolean satisfies(String id) {
 		return true;
 	}
-
 }

@@ -1,8 +1,8 @@
 
 /**
  * Write a description of class Rater here.
- * 
- * @author (your name) 
+ *
+ * @author (your name)
  * @version (a version number or a date)
  */
 
@@ -10,50 +10,52 @@ import java.util.*;
 
 public class EfficientRater implements Rater{
     private String myID;
-    private HashMap<String,Rating> myRatings; //key is movieID, value is its rating
+    private HashMap<String, Rating> myRatings; // key is movieID, value is its rating
 
     public EfficientRater(String id) {
         myID = id;
-        myRatings = new HashMap<String,Rating>();
+        myRatings = new HashMap<String, Rating>();
     }
 
-    @Override 
+    @Override
     public void addRating(String item, double rating) {
-        myRatings.put(item, new Rating(item,rating));
+        myRatings.put(item, new Rating(item, rating));
     }
 
-    @Override 
+    @Override
     public boolean hasRating(String item) {
-            if (myRatings.containsKey(item)){
-                return true;
-            }else{return false;}
-        
+        if (myRatings.containsKey(item)) {
+            return true;
+        } else {
+            return false;
+        }
+
     }
 
-    @Override 
+    @Override
     public String getID() {
         return myID;
     }
 
-    @Override 
+    @Override
     public double getRating(String item) {
-            if (myRatings.containsKey(item)){
-                return myRatings.get(item).getValue();
-            }else{
-                return -1;
-            }
-        
+        if (myRatings.containsKey(item)) {
+            return myRatings.get(item).getValue();
+        } else {
+            return -1;
+        }
+
     }
 
-    @Override 
+    @Override
     public int numRatings() {
         return myRatings.size();
     }
 
-    @Override 
+    @Override
     public ArrayList<String> getItemsRated() {
         ArrayList<String> list = new ArrayList<String>();
-        for(Rating r : myRatings.values()){
+        for (Rating r : myRatings.values()) {
             list.add(r.getItem());
         }
         return list;

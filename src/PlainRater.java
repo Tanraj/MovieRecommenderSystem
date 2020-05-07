@@ -1,14 +1,14 @@
 
 /**
  * Write a description of class Rater here.
- * 
- * @author (your name) 
+ *
+ * @author (your name)
  * @version (a version number or a date)
  */
 
 import java.util.*;
 
-public class PlainRater implements Rater{
+public class PlainRater implements Rater {
     private String myID;
     private ArrayList<Rating> myRatings;
 
@@ -17,50 +17,50 @@ public class PlainRater implements Rater{
         myRatings = new ArrayList<Rating>();
     }
 
-    @Override 
+    @Override
     public void addRating(String item, double rating) {
-        myRatings.add(new Rating(item,rating));
+        myRatings.add(new Rating(item, rating));
     }
 
-    @Override 
+    @Override
     public boolean hasRating(String item) {
-        for(int k=0; k < myRatings.size(); k++){
-            if (myRatings.get(k).getItem().equals(item)){
+        for (int k = 0; k < myRatings.size(); k++) {
+            if (myRatings.get(k).getItem().equals(item)) {
                 return true;
             }
         }
-        
+
         return false;
     }
 
-    @Override 
+    @Override
     public String getID() {
         return myID;
     }
 
-    @Override 
+    @Override
     public double getRating(String item) {
-        for(int k=0; k < myRatings.size(); k++){
-            if (myRatings.get(k).getItem().equals(item)){
+        for (int k = 0; k < myRatings.size(); k++) {
+            if (myRatings.get(k).getItem().equals(item)) {
                 return myRatings.get(k).getValue();
             }
         }
-        
+
         return -1;
     }
 
-    @Override 
+    @Override
     public int numRatings() {
         return myRatings.size();
     }
 
-    @Override 
+    @Override
     public ArrayList<String> getItemsRated() {
         ArrayList<String> list = new ArrayList<String>();
-        for(int k=0; k < myRatings.size(); k++){
+        for (int k = 0; k < myRatings.size(); k++) {
             list.add(myRatings.get(k).getItem());
         }
-        
+
         return list;
     }
 }
